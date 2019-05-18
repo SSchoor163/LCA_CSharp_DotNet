@@ -1,0 +1,7 @@
+C:\Users\Steven Schoor\Documents\DevFolder\LCA_Csharp_dotnet\Csharp Programs\Pig_Latin_Translator\bin\Debug\Pig_Latin_Translator.exe.config
+C:\Users\Steven Schoor\Documents\DevFolder\LCA_Csharp_dotnet\Csharp Programs\Pig_Latin_Translator\bin\Debug\Pig_Latin_Translator.exe
+C:\Users\Steven Schoor\Documents\DevFolder\LCA_Csharp_dotnet\Csharp Programs\Pig_Latin_Translator\bin\Debug\Pig_Latin_Translator.pdb
+C:\Users\Steven Schoor\Documents\DevFolder\LCA_Csharp_dotnet\Csharp Programs\Pig_Latin_Translator\obj\Debug\Pig_Latin_Translator.csproj.CoreCompileInputs.cache
+C:\Users\Steven Schoor\Documents\DevFolder\LCA_Csharp_dotnet\Csharp Programs\Pig_Latin_Translator\obj\Debug\Pig_Latin_Translator.exe
+C:\Users\Steven Schoor\Documents\DevFolder\LCA_Csharp_dotnet\Csharp Programs\Pig_Latin_Translator\obj\Debug\Pig_Latin_Translator.pdb
+C:\Users\Steven Schoor\Documents\DevFolder\LCA_Csharp_dotnet\Csharp Programs\Pig_Latin_Translator\obj\Debug\Pig_Latin_Translator.csprojAssemblyReference.cache

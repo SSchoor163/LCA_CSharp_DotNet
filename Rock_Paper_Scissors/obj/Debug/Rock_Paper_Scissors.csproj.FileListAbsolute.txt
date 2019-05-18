@@ -1,0 +1,7 @@
+C:\Users\Steven Schoor\Documents\DevFolder\LCA_Csharp_dotnet\Csharp Programs\Rock_Paper_Scissors\bin\Debug\Rock_Paper_Scissors.exe.config
+C:\Users\Steven Schoor\Documents\DevFolder\LCA_Csharp_dotnet\Csharp Programs\Rock_Paper_Scissors\bin\Debug\Rock_Paper_Scissors.exe
+C:\Users\Steven Schoor\Documents\DevFolder\LCA_Csharp_dotnet\Csharp Programs\Rock_Paper_Scissors\bin\Debug\Rock_Paper_Scissors.pdb
+C:\Users\Steven Schoor\Documents\DevFolder\LCA_Csharp_dotnet\Csharp Programs\Rock_Paper_Scissors\obj\Debug\Rock_Paper_Scissors.csprojAssemblyReference.cache
+C:\Users\Steven Schoor\Documents\DevFolder\LCA_Csharp_dotnet\Csharp Programs\Rock_Paper_Scissors\obj\Debug\Rock_Paper_Scissors.csproj.CoreCompileInputs.cache
+C:\Users\Steven Schoor\Documents\DevFolder\LCA_Csharp_dotnet\Csharp Programs\Rock_Paper_Scissors\obj\Debug\Rock_Paper_Scissors.exe
+C:\Users\Steven Schoor\Documents\DevFolder\LCA_Csharp_dotnet\Csharp Programs\Rock_Paper_Scissors\obj\Debug\Rock_Paper_Scissors.pdb

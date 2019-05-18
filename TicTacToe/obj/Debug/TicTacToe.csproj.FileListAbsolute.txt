@@ -1,0 +1,7 @@
+C:\Users\Steven Schoor\Documents\DevFolder\LCA_Csharp_dotnet\Csharp Programs\TicTacToe\bin\Debug\TicTacToe.exe.config
+C:\Users\Steven Schoor\Documents\DevFolder\LCA_Csharp_dotnet\Csharp Programs\TicTacToe\bin\Debug\TicTacToe.exe
+C:\Users\Steven Schoor\Documents\DevFolder\LCA_Csharp_dotnet\Csharp Programs\TicTacToe\bin\Debug\TicTacToe.pdb
+C:\Users\Steven Schoor\Documents\DevFolder\LCA_Csharp_dotnet\Csharp Programs\TicTacToe\obj\Debug\TicTacToe.csprojAssemblyReference.cache
+C:\Users\Steven Schoor\Documents\DevFolder\LCA_Csharp_dotnet\Csharp Programs\TicTacToe\obj\Debug\TicTacToe.csproj.CoreCompileInputs.cache
+C:\Users\Steven Schoor\Documents\DevFolder\LCA_Csharp_dotnet\Csharp Programs\TicTacToe\obj\Debug\TicTacToe.exe
+C:\Users\Steven Schoor\Documents\DevFolder\LCA_Csharp_dotnet\Csharp Programs\TicTacToe\obj\Debug\TicTacToe.pdb
