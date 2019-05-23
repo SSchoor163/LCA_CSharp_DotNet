@@ -1,7 +1,0 @@
-C:\Users\Steven Schoor\Documents\DevFolder\LCA_Csharp_dotnet\Csharp Programs\manyMethods\bin\Debug\manyMethods.exe.config
-C:\Users\Steven Schoor\Documents\DevFolder\LCA_Csharp_dotnet\Csharp Programs\manyMethods\bin\Debug\manyMethods.exe
-C:\Users\Steven Schoor\Documents\DevFolder\LCA_Csharp_dotnet\Csharp Programs\manyMethods\bin\Debug\manyMethods.pdb
-C:\Users\Steven Schoor\Documents\DevFolder\LCA_Csharp_dotnet\Csharp Programs\manyMethods\obj\Debug\manyMethods.csprojAssemblyReference.cache
-C:\Users\Steven Schoor\Documents\DevFolder\LCA_Csharp_dotnet\Csharp Programs\manyMethods\obj\Debug\manyMethods.csproj.CoreCompileInputs.cache
-C:\Users\Steven Schoor\Documents\DevFolder\LCA_Csharp_dotnet\Csharp Programs\manyMethods\obj\Debug\manyMethods.exe
-C:\Users\Steven Schoor\Documents\DevFolder\LCA_Csharp_dotnet\Csharp Programs\manyMethods\obj\Debug\manyMethods.pdb
