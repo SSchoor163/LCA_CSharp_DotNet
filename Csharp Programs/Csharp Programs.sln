@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PE_Multiples_of_3_and_5", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Towers_of_Hanoi", "Towers_of_Hanoi\Towers_of_Hanoi.csproj", "{ADE935A2-D2C2-48A4-A48B-BD02627B8555}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test", "test\test.csproj", "{508F3DB9-A75B-48C6-BC97-C2554B5248BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PE_Even_fibinachi_numbers", "PE_Even_fibinachi_numbers\PE_Even_fibinachi_numbers.csproj", "{EEC73725-D192-40A3-AB6E-FE6DB3A6916B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,14 @@ Global
 		{ADE935A2-D2C2-48A4-A48B-BD02627B8555}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADE935A2-D2C2-48A4-A48B-BD02627B8555}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ADE935A2-D2C2-48A4-A48B-BD02627B8555}.Release|Any CPU.Build.0 = Release|Any CPU
+		{508F3DB9-A75B-48C6-BC97-C2554B5248BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{508F3DB9-A75B-48C6-BC97-C2554B5248BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{508F3DB9-A75B-48C6-BC97-C2554B5248BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{508F3DB9-A75B-48C6-BC97-C2554B5248BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEC73725-D192-40A3-AB6E-FE6DB3A6916B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEC73725-D192-40A3-AB6E-FE6DB3A6916B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEC73725-D192-40A3-AB6E-FE6DB3A6916B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEC73725-D192-40A3-AB6E-FE6DB3A6916B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

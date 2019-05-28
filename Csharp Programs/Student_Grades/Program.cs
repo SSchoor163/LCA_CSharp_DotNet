@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// add input validation for multiple instances of the same key
 namespace Student_Grades
 {
     class Program
