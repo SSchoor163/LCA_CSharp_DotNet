@@ -10,11 +10,12 @@ namespace Towers_of_Hanoi
     {
         //Global dictionary. Holds a String and a stack of int. Uses String vs Char to avoid exception handling where the user may enter more than one character when moving.
        static Dictionary<String, Stack<int>> towers = new Dictionary<String, Stack<int>>();
+        //initiating size to for increased difficulty, turns to track the number of moves, moveFrom to hold the piece the user is moving, and moveTo to hold where the user wants to move the piece too.
+        static int size = 4, turns = 1;
+        static string moveFrom, moveTo;
         static void Main(string[] args)
         {
-            //initiating size to for increased difficulty, turns to track the number of moves, moveFrom to hold the piece the user is moving, and moveTo to hold where the user wants to move the piece too.
-            int size = 4; int turns = 1;
-            string moveFrom, moveTo;
+            
             
             //Write Tile, Rules, and Choose Difficulty/
             Console.WriteLine("Towers of Hanoi");
@@ -49,45 +50,10 @@ namespace Towers_of_Hanoi
                               "Turn: " +turns +"\n\n");
 
                 printboard(new Dictionary<String, Stack<int>>(towers), size);
-
-            move://Defines a region of move sets. Will be jumped to if the user tries to move a larger piece onto a smaller piece.
-                {
-                    //User chooses which tower the want to move a piece off of.
-                    Console.Write("Select A, B, or C to choose a piece...");
-                    moveFrom = Console.ReadLine();
-                    moveFrom = moveFrom.ToUpper();
-                    //Validates the tower the user chooses for moveFrom
-                    while (moveFrom != "A" && moveFrom != "B" && moveFrom != "C")
-                    {
-                        Console.WriteLine("invalid Choice. please choose again(A, B, or C)...");
-                        moveFrom = Console.ReadLine();
-                        moveFrom = moveFrom.ToUpper();
-                    }
-                    //User choose where they want to move the piece too.
-                    Console.Write("Select A, B, or C to move the piece...");
-                    moveTo = Console.ReadLine();
-                    moveTo = moveTo.ToUpper();
-                    //Validates the tower the user chooses for moveToo
-                    while (moveTo != "A" && moveTo != "B" && moveTo != "C")
-                    {
-                        Console.WriteLine("invalid Choice. please choose again(A, B, or C)...");
-                        moveTo = Console.ReadLine();
-                        moveTo = moveTo.ToUpper();
-                    }
-
-                    if (towers[moveTo].Count != 0)//Validation. If the tower the user wants to move a piece into is not empty
-                    {
-                        if (towers[moveTo].Peek() < towers[moveFrom].Peek())//Checks to see if the piece the user wants to move is larger than the piece they want to move it on top of. If it is forces the user to rechoose their move by jumping back to the begining of the move region
-                        {
-                            Console.WriteLine("The peice you are trying to move is larger than the peice you are trying to move it to.");
-                            goto move;
-                        }
-                    }
-                    //moves a piece from one tower into another after validation. Increases the turn count. clears the screen for the next iteration of moves.
-                    towers[moveTo].Push(towers[moveFrom].Pop());
-                    turns++;
-                    Console.Clear();
-                }
+                //get user input for move, validate it, then swap piece
+                move();
+                turns++;
+                Console.Clear();
             }
             //after all pieces have been moved to tower C print the board again and tell the user they have won and in how many turns 
             Console.Write("Towers of Hanoi\n\n");
@@ -98,8 +64,43 @@ namespace Towers_of_Hanoi
         }
 
        
-            
+            //user choose a piece to move from one tower to another. validates the choice, then performs the move.
+        static void move()
+        {
+            //User chooses which tower the want to move a piece off of.
+            Console.Write("Select A, B, or C to choose a piece...");
+            moveFrom = Console.ReadLine();
+            moveFrom = moveFrom.ToUpper();
+            //Validates the tower the user chooses for moveFrom
+            while (moveFrom != "A" && moveFrom != "B" && moveFrom != "C")
+            {
+                Console.WriteLine("invalid Choice. please choose again(A, B, or C)...");
+                moveFrom = Console.ReadLine();
+                moveFrom = moveFrom.ToUpper();
+            }
+            //User choose where they want to move the piece too.
+            Console.Write("Select A, B, or C to move the piece...");
+            moveTo = Console.ReadLine();
+            moveTo = moveTo.ToUpper();
+            //Validates the tower the user chooses for moveToo
+            while (moveTo != "A" && moveTo != "B" && moveTo != "C")
+            {
+                Console.WriteLine("invalid Choice. please choose again(A, B, or C)...");
+                moveTo = Console.ReadLine();
+                moveTo = moveTo.ToUpper();
+            }
 
+            if (towers[moveTo].Count != 0|| moveTo == moveFrom)//Validation. If the tower the user wants to move a piece into is not empty and they are not moving the same piece back into the sam tower
+            {
+                if (towers[moveTo].Peek() < towers[moveFrom].Peek())//Checks to see if the piece the user wants to move is larger than the piece they want to move it on top of. If it is forces the user to rechoose their move by jumping back to the begining of the move region
+                {
+                    Console.WriteLine("The peice you are trying to move is larger than the peice you are trying to move it to.");
+                    move();
+                }
+            }
+            //moves a piece from one tower into another after validation. Increases the turn count. clears the screen for the next iteration of moves.
+            towers[moveTo].Push(towers[moveFrom].Pop());
+        }
 
             
         //Places the stack values in towers into indivisual stacks to avoid reference to the original towers, then iterate and pop off values vertically
