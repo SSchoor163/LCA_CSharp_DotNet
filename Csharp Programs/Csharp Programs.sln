@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test", "test\test.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PE_Even_fibinachi_numbers", "PE_Even_fibinachi_numbers\PE_Even_fibinachi_numbers.csproj", "{EEC73725-D192-40A3-AB6E-FE6DB3A6916B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "whiteboard_bubblesort", "whiteboard_bubblesort\whiteboard_bubblesort.csproj", "{EF47CE6D-9657-4DC3-AECE-F261CC2F4ED4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PosCos", "PosCos\PosCos.csproj", "{F99FD771-24A2-42CB-8D79-9A1C5EFAD399}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +79,14 @@ Global
 		{EEC73725-D192-40A3-AB6E-FE6DB3A6916B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EEC73725-D192-40A3-AB6E-FE6DB3A6916B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EEC73725-D192-40A3-AB6E-FE6DB3A6916B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF47CE6D-9657-4DC3-AECE-F261CC2F4ED4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF47CE6D-9657-4DC3-AECE-F261CC2F4ED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF47CE6D-9657-4DC3-AECE-F261CC2F4ED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF47CE6D-9657-4DC3-AECE-F261CC2F4ED4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F99FD771-24A2-42CB-8D79-9A1C5EFAD399}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F99FD771-24A2-42CB-8D79-9A1C5EFAD399}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F99FD771-24A2-42CB-8D79-9A1C5EFAD399}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F99FD771-24A2-42CB-8D79-9A1C5EFAD399}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

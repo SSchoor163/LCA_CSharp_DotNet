@@ -89,8 +89,12 @@ namespace Towers_of_Hanoi
                 moveTo = Console.ReadLine();
                 moveTo = moveTo.ToUpper();
             }
-
-            if (towers[moveTo].Count != 0|| moveTo == moveFrom)//Validation. If the tower the user wants to move a piece into is not empty and they are not moving the same piece back into the sam tower
+            if (towers[moveFrom].Count == 0)//Validation if the user is trying to move a piece from an empty stack choose again.
+            {
+                Console.WriteLine("There is no piece in the tower you choose. PLease choose again...");
+                move();
+            }
+            if (towers[moveTo].Count != 0)//Validation. If the tower the user wants to move a piece into is not empty
             {
                 if (towers[moveTo].Peek() < towers[moveFrom].Peek())//Checks to see if the piece the user wants to move is larger than the piece they want to move it on top of. If it is forces the user to rechoose their move by jumping back to the begining of the move region
                 {
@@ -98,6 +102,7 @@ namespace Towers_of_Hanoi
                     move();
                 }
             }
+            
             //moves a piece from one tower into another after validation. Increases the turn count. clears the screen for the next iteration of moves.
             towers[moveTo].Push(towers[moveFrom].Pop());
         }
