@@ -10,11 +10,11 @@ namespace test
     {
         static void Main(string[] args)
         {
-            Dictionary<string, int> test = new Dictionary<string, int>();
-            test.Add("test1", 5);
-            test.Add("test1", 3);
-            foreach(string name in test.Keys)
-                Console.WriteLine(test[name]);
+            int[] x = { 5, 6, 7, 8, 9, 10 };
+            foreach(int y in x)
+            {
+                Console.WriteLine(x[y]);
+            }
             Console.Read();
         }
     }
