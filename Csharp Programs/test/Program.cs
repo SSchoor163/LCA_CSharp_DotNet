@@ -10,11 +10,9 @@ namespace test
     {
         static void Main(string[] args)
         {
-            int[] x = { 5, 6, 7, 8, 9, 10 };
-            foreach(int y in x)
-            {
-                Console.WriteLine(x[y]);
-            }
+            string x = "billy", y = "Mandy";
+            x += y;
+            Console.WriteLine(x);
             Console.Read();
         }
     }
