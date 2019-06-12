@@ -33,6 +33,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Whiteboard_duplicate_revers
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TooDo_List", "TooDo_List\TooDo_List.csproj", "{2D4016B9-92A4-4B18-AFEB-EB9498D04B31}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Points", "Points\Points.csproj", "{9169E0EB-BEA3-45EB-9922-8BD1C59FF28C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Superheros and Supervillans", "Superheros and Supervillans\Superheros and Supervillans.csproj", "{1D3485CD-493A-4201-A2D2-E5820860F5F2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +103,14 @@ Global
 		{2D4016B9-92A4-4B18-AFEB-EB9498D04B31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D4016B9-92A4-4B18-AFEB-EB9498D04B31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D4016B9-92A4-4B18-AFEB-EB9498D04B31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9169E0EB-BEA3-45EB-9922-8BD1C59FF28C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9169E0EB-BEA3-45EB-9922-8BD1C59FF28C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9169E0EB-BEA3-45EB-9922-8BD1C59FF28C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9169E0EB-BEA3-45EB-9922-8BD1C59FF28C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D3485CD-493A-4201-A2D2-E5820860F5F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D3485CD-493A-4201-A2D2-E5820860F5F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D3485CD-493A-4201-A2D2-E5820860F5F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D3485CD-493A-4201-A2D2-E5820860F5F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
