@@ -21,7 +21,7 @@ namespace Superheros_and_Supervillans
         {
             return $"{Name}: ";
         }
-        public string PrintGreeting()
+        public virtual string PrintGreeting()
         {
             return $"Hi, my name is {Name}, you can call me {NickName}.";
         }
@@ -37,7 +37,7 @@ namespace Superheros_and_Supervillans
             SuperPower = superpower;
             RealName = realname;
         }
-        public new string PrintGreeting()
+        public override string PrintGreeting()
         {
             return $"I am {RealName}. When I am {Name}, my super power is {SuperPower}!";
         }
@@ -51,7 +51,7 @@ namespace Superheros_and_Supervillans
             Nemesis = nemesis;
         }
 
-        public new string PrintGreeting()
+        public override string PrintGreeting()
         {
             return $"I am the {Name}. Have you seen {Nemesis}?";
         }
@@ -60,13 +60,17 @@ namespace Superheros_and_Supervillans
     {
         static void Main(string[] args)
         {
-            Person one = new Person("William", "Bill");
-            Superhero two = new Superhero("Mr Incredible", "super strength", "Wade Turner");
-            SuperVillan three = new SuperVillan("The Joker", "Batman");
-
-            Console.WriteLine($"{one.ToString()}{one.PrintGreeting()}");
-            Console.WriteLine($"{two.ToString()}{two.PrintGreeting()}");
-            Console.WriteLine($"{three.ToString()}{three.PrintGreeting()}");
+            List<Person> citizens = new List<Person>();
+            Person temp = new Person("William", "Bill");
+            citizens.Add(temp);
+            temp = new Superhero("Mr Incredible", "super strength", "Wade Turner");
+            citizens.Add(temp);
+            temp = new SuperVillan("The Joker", "Batman");
+            citizens.Add(temp);
+            foreach (Person x in citizens)
+            {
+                Console.WriteLine($"{x.ToString()}{x.PrintGreeting()}");
+            }
             Console.Read();
 
         }

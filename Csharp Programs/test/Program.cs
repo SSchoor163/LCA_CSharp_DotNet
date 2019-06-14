@@ -11,8 +11,8 @@ namespace test
         static void Main(string[] args)
         {
             string x = "billy", y = "Mandy";
-            x += y;
-            Console.WriteLine(x);
+           
+            Console.WriteLine(nameof(x));
             Console.Read();
         }
     }

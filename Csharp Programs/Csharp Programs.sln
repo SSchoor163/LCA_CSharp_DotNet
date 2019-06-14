@@ -37,6 +37,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Points", "Points\Points.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Superheros and Supervillans", "Superheros and Supervillans\Superheros and Supervillans.csproj", "{1D3485CD-493A-4201-A2D2-E5820860F5F2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "palidron", "palidron\palidron.csproj", "{C24A8315-3925-4B58-A7BC-97B599D31F73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carlot", "Carlot\Carlot.csproj", "{DFF2BEA7-EC75-4007-A697-2F668E547C83}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +115,14 @@ Global
 		{1D3485CD-493A-4201-A2D2-E5820860F5F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D3485CD-493A-4201-A2D2-E5820860F5F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D3485CD-493A-4201-A2D2-E5820860F5F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C24A8315-3925-4B58-A7BC-97B599D31F73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C24A8315-3925-4B58-A7BC-97B599D31F73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C24A8315-3925-4B58-A7BC-97B599D31F73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C24A8315-3925-4B58-A7BC-97B599D31F73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFF2BEA7-EC75-4007-A697-2F668E547C83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFF2BEA7-EC75-4007-A697-2F668E547C83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFF2BEA7-EC75-4007-A697-2F668E547C83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFF2BEA7-EC75-4007-A697-2F668E547C83}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
