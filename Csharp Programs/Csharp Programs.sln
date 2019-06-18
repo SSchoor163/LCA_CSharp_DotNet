@@ -41,6 +41,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "palidron", "palidron\palidr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carlot", "Carlot\Carlot.csproj", "{DFF2BEA7-EC75-4007-A697-2F668E547C83}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "removeZero", "removeZero\removeZero.csproj", "{7262131A-BC7A-42AC-9256-156FFC4DF18D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IRentables", "IRentables\IRentables.csproj", "{18E7AEF7-C921-4A51-8D9A-B84099CA5DEC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +127,14 @@ Global
 		{DFF2BEA7-EC75-4007-A697-2F668E547C83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFF2BEA7-EC75-4007-A697-2F668E547C83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFF2BEA7-EC75-4007-A697-2F668E547C83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7262131A-BC7A-42AC-9256-156FFC4DF18D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7262131A-BC7A-42AC-9256-156FFC4DF18D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7262131A-BC7A-42AC-9256-156FFC4DF18D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7262131A-BC7A-42AC-9256-156FFC4DF18D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18E7AEF7-C921-4A51-8D9A-B84099CA5DEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18E7AEF7-C921-4A51-8D9A-B84099CA5DEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18E7AEF7-C921-4A51-8D9A-B84099CA5DEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18E7AEF7-C921-4A51-8D9A-B84099CA5DEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

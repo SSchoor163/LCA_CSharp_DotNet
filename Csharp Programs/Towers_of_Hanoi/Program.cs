@@ -12,8 +12,6 @@ namespace Towers_of_Hanoi
         static string moveFrom, moveTo;
         static void Main(string[] args)
         {
-
-
             //Write Tile, Rules, and Choose Difficulty/
             Console.WriteLine("Towers of Hanoi");
             Console.Write("Rules: You must get each number in tower A into tower C\n" +
@@ -60,7 +58,6 @@ namespace Towers_of_Hanoi
             Console.Read();
         }
 
-
         //user choose a piece to move from one tower to another. validates the choice, then performs the move.
         static void move()
         {
@@ -82,7 +79,6 @@ namespace Towers_of_Hanoi
             //moves a piece from one tower into another after validation. Increases the turn count. clears the screen for the next iteration of moves.
             towers[moveTo].Push(towers[moveFrom].Pop());
         }
-
         static void ValidateMove(ref string x)
         {
             while (x != "A" && x != "B" && x != "C")
