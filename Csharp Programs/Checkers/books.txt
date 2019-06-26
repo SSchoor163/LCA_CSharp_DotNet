@@ -1,0 +1,46 @@
+﻿C:\Users\Steven Schoor>sqlite3 books.db
+SQLite version 3.28.0 2019-04-16 19:49:53
+Enter ".help" for usage hints.
+sqlite> create table(id int, title varchar(20), author varchar(20));
+Error: near "(": syntax error
+sqlite> create table (id int, title varchar(20), author varchar(20));
+Error: near "(": syntax error
+sqlite> create table books(id int, title varchar(20), author varchar(20));
+sqlite> insert into books(id, title, author) values(0, "The Hobbit", "Tolkien");
+sqlite> insert into books(id, title, author) values(1, "The Cat in the Hat", "Dr Seuss");
+sqlite> insert into books(id, title, author) values(2, "Tom Sawyer", "Mark Twain");
+sqlite> select * from books
+   ...> ;
+0|The Hobbit|Tolkien
+1|The Cat in the Hat|Dr Seuss
+2|Tom Sawyer|Mark Twain
+sqlite> select id from books
+   ...> ;
+0
+1
+2
+sqlite> select * from books where id=2;
+2|Tom Sawyer|Mark Twain
+sqlite> select titles from books
+   ...> ;
+Error: no such column: titles
+sqlite> select title from books
+   ...> ;
+The Hobbit
+The Cat in the Hat
+Tom Sawyer
+sqlite> update books set author = "J.R.R Tolkien" where id = 0;
+sqlite> select * from books
+   ...> ;
+0|The Hobbit|J.R.R Tolkien
+1|The Cat in the Hat|Dr Seuss
+2|Tom Sawyer|Mark Twain
+sqlite> delete * from books where id=1;
+Error: near "*": syntax error
+sqlite> delete from books where id=1;
+sqlite> slect * from books;
+Error: near "slect": syntax error
+sqlite> select * from books;
+0|The Hobbit|J.R.R Tolkien
+2|Tom Sawyer|Mark Twain
+sqlite>
