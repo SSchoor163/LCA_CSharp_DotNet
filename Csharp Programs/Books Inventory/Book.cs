@@ -14,5 +14,11 @@ namespace Books_Inventory
             this.Title = Title;
             this.Author = Author;
         }
+        public Books(string Title, string Author, int Id)
+        {
+            this.Title = Title;
+            this.Author = Author;
+            this.Id = Id;
+        }
     }
 }
