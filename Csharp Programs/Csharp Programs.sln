@@ -49,9 +49,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkers", "Checkers\Checke
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Create_fibinaci_numbers", "Create_fibinaci_numbers\Create_fibinaci_numbers.csproj", "{5E4556FC-8AB5-482D-9952-C6EEA5EC5338}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "entities framwork practice", "entities framwork practice\entities framwork practice.csproj", "{5B30D003-3CE4-417E-9F8A-CF4A07F6C366}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "entities framwork practice", "entities framwork practice\entities framwork practice.csproj", "{5B30D003-3CE4-417E-9F8A-CF4A07F6C366}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Books Inventory", "Books Inventory\Books Inventory.csproj", "{91779B8D-E5FC-4D79-A3F3-0564F0B5A2F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Books Inventory", "Books Inventory\Books Inventory.csproj", "{91779B8D-E5FC-4D79-A3F3-0564F0B5A2F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todo Application", "Todo Application\Todo Application.csproj", "{0FAC9AF5-5251-4C95-97F3-783064E21B5B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -159,6 +161,10 @@ Global
 		{91779B8D-E5FC-4D79-A3F3-0564F0B5A2F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91779B8D-E5FC-4D79-A3F3-0564F0B5A2F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91779B8D-E5FC-4D79-A3F3-0564F0B5A2F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FAC9AF5-5251-4C95-97F3-783064E21B5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FAC9AF5-5251-4C95-97F3-783064E21B5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FAC9AF5-5251-4C95-97F3-783064E21B5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FAC9AF5-5251-4C95-97F3-783064E21B5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

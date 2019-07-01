@@ -43,7 +43,7 @@ namespace Books_Inventory
                 }
                 Menu = printMenu();
             }
-            Console.WriteLine("Press any key to close the program...");
+            Console.WriteLine("Press enter to close the program...");
             Console.ReadLine();
         }
 
