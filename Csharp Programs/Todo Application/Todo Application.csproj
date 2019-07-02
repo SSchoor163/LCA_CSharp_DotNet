@@ -2,8 +2,9 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
     <RootNamespace>Todo_Application</RootNamespace>
+    <StartupObject>Todo_Application.Program</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>

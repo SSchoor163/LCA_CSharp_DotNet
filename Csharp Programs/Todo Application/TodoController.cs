@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
 using System.IO;
+using System.Linq;
 
 namespace Todo_Application
-{
+{//TODO rename
     class TodoController: DbContext
     {
         public DbSet<Todo> Todos { get; set; } //Local copy of database
@@ -23,36 +24,15 @@ namespace Todo_Application
         {
             
             List<Todo> TempList = new List<Todo>(); // new list of Todo
-            Todo Temp;
+            
 
             foreach(Todo item in Todos)
             {
                 TempList.Add(item);
             }
             List<Todo> SortedList = TempList.OrderBy(o => o.Title).ToList();
-            int i,n;
-            n = TempList.Count;
-            bool swapped;
-            for (i = 0; i < n - 1; i++)
-            {
-                swapped = false;
-                foreach(Todo j in TempList)
-                {foreach(Todo k in TempList)
-                    if (k.Title > j.Title)
-                    {
-                        // swap arr[j] and arr[j+1] 
-                        temp = arr[j];
-                        arr[j] = arr[j + 1];
-                        arr[j + 1] = temp;
-                        swapped = true;
-                    }
-                }
-
-                // IF no two elements were  
-                // swapped by inner loop, then break 
-                if (swapped == false)
-                    break;
-            }
+            
+            
         }
     }
 }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Todo_Application
 {
-    enum Priority {none, low, medium, high}
+    
     class Todo
     {
         public int Id { get; private set; }
@@ -32,6 +32,7 @@ namespace Todo_Application
             this.Title = Title;
             this.Description = Description;
             this.Due = Due;
+            HasDue = true;
             GetDueStatus();
             Priority = Priority.none;
         }
@@ -51,14 +52,15 @@ namespace Todo_Application
             this.Title = Title;
             this.Description = Description;
             this.Due = Due;
+            HasDue = true;
             GetDueStatus();
             this.Priority = Priority;
         }
         //detirmine if due is past due, or near due. If Due is not set do nothing
         public void GetDueStatus()
         {
-            if (Due != null) {
-                if (Due.Day >= DateTime.Now.Day - 1 && Due.Day < DateTime.Now.Day)
+            
+                if (Due.Day >= (DateTime.Now.Day - 1) && Due.Day > DateTime.Now.Day)
                 {
                     NearDue = true;
                     PastDue = false;
@@ -67,18 +69,18 @@ namespace Todo_Application
                 {
                     NearDue = false;
                     PastDue = true;
-                } }
+                } 
         }
         //Display Todo information
-        public void DisplayTodo(int Count)
+        public void DisplayTodo()
         {
             String Marker, Time;
             if (Complete) { Marker = "Complete"; } else { Marker = "Pending"; }// if complete display complete, else display pending
             if (HasDue) Time = Due.ToShortDateString(); else Time = ""; // if there is a due date display it, otherwise display nothing
             if (Priority == Priority.medium) Console.ForegroundColor = ConsoleColor.DarkYellow; // if priority is set to medium, set text color to dark yellow
-            else if (Priority == Priority.medium) Console.ForegroundColor = ConsoleColor.Red;//if priority is set to high set text color to red
+            else if (Priority == Priority.high) Console.ForegroundColor = ConsoleColor.Red;//if priority is set to high set text color to red
             Console.Write($"------------------------------------------------------------------------------\n" +
-                          $"{Count}. [ {Marker} ]     {Title}          \n" +
+                          $"{Id}. [ {Marker} ]     {Title}          \n" +
                           $"{Description}\n" +
                           $"Due: {Time}        ");
             if (PastDue)// if past due is true say so
@@ -95,7 +97,8 @@ namespace Todo_Application
                 Console.Write($"{Priority}\n");
             }
             else Console.Write("\n");
-            Console.Write("------------------------------------------------------------------------------");
+            Console.Write("------------------------------------------------------------------------------\n");
+            Console.ResetColor();
         }
     }
 }

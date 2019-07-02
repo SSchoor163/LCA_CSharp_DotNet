@@ -3,33 +3,41 @@ using Microsoft.EntityFrameworkCore;
 using System.IO;
 namespace Todo_Application
 {
+    enum Priority { none, low, medium, high }
+    enum Sort { ID, Pending, Complete, DateAscending, DateDecending, PritorityAscending, PriorityDescending}
     class Program
     {
         static void Main(string[] args)
         {
+            ITemRepository.Control.Database.EnsureCreated();
+            Sort Order = Sort.Pending;
+            ITemRepository.Display(Order);
             int Menu = StaticFunctions.MainMenu();
-            switch (Menu)
-            {
-                case 1:
-                    break;
-                case 2:
-                    break;
-                case 3:
-                    break;
-                case 4:
-                    break;
-                case 5:
-                    break;
-                case 6:
-                    break;
-                case 7:
-                    break;
+            while (Menu != 6) {
+                switch (Menu)
+                    {
+                        case 1:
+                            ITemRepository.CreateTodo();
+                            break;
+                        case 2:
+                            ITemRepository.DeleteTodo();
+                            break;
+                        case 3:
+                            ITemRepository.EditTodo();
+                            break;
+                        case 4:
+                            ITemRepository.CompleteTodo();
+                            break;
+                        case 5:
+                            Order = StaticFunctions.SetSort(Order);
+                            break;
+                    }
+                Console.Clear();
+                ITemRepository.Display(Order);
+                Menu = StaticFunctions.MainMenu();
             }
-            TodoController control = new TodoController();
-            using (control)
-            {
-                var SortByTitle = control.Todos.
-            }
+            
+           
         }
     }
-}
+}//TODO make and validate against a list of valid ID's
