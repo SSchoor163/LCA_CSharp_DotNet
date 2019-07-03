@@ -4,7 +4,7 @@ using System.Text;
 //TODO Rename to COnsole Utility
 namespace Todo_Application
 {
-    class StaticFunctions
+    class ConsoleUtilities
     {
         //writes Main Menu, retrieves user menu choice, and returns corresponding menu choice
         static public int MainMenu()
@@ -17,8 +17,8 @@ namespace Todo_Application
                           $"4. Mark todo as complete\n" +
                           $"5. Sort Todo items\n" +
                           $"6. Exit program\n");
-            int choice = ValidationStringtoInt(Console.ReadLine()); // set choice to user menu choice of type int
-            choice = ValidationMenu(choice, 6); //ensures choice is between 1 and 8
+            int choice = Validation.ValidationStringtoInt(Console.ReadLine()); // set choice to user menu choice of type int
+            choice = Validation.ValidationMenu(choice, 6); //ensures choice is between 1 and 8
             return choice;
         }
         public static Priority PriorityMenu()
@@ -28,8 +28,8 @@ namespace Todo_Application
                           $"1. Low\n" +
                           $"2. Medium\n" +
                           $"3. High\n");
-            int choice = ValidationStringtoInt(Console.ReadLine()); // set choice to user menu choice of type int
-            choice = ValidationMenu(choice, 3); //ensures choice is between 1 and 3
+            int choice = Validation.ValidationStringtoInt(Console.ReadLine()); // set choice to user menu choice of type int
+            choice = Validation.ValidationMenu(choice, 3); //ensures choice is between 1 and 3
             if (choice == 1)
                 return Priority.low;
             else if (choice == 2)
@@ -49,8 +49,8 @@ namespace Todo_Application
                            $"5. Date (Descending)\n" +
                            $"6. Priority (Ascending)\n" +
                            $"7. Priority (Descending)\n" );
-            int choice = ValidationStringtoInt(Console.ReadLine()); // set choice to user menu choice of type int
-            choice = ValidationMenu(choice, 7); //ensures choice is between 1 and 8
+            int choice = Validation.ValidationStringtoInt(Console.ReadLine()); // set choice to user menu choice of type int
+            choice = Validation.ValidationMenu(choice, 7); //ensures choice is between 1 and 8
             switch (choice)
             {
                 case 1:
@@ -87,43 +87,36 @@ namespace Todo_Application
                           $"4. Due Date\n" +
                           $"5. Priority\n" +
                           $"6. Return to Main Menu\n");
-            int choice = ValidationStringtoInt(Console.ReadLine()); // set choice to user menu choice of type int
-            choice = ValidationMenu(choice, 6); //ensures choice is between 1 and 8
+            int choice = Validation.ValidationStringtoInt(Console.ReadLine()); // set choice to user menu choice of type int
+            choice = Validation.ValidationMenu(choice, 6); //ensures choice is between 1 and 8
             return choice;
-        }
-        //ensures user input is in the form of a number
-        public static int ValidationStringtoInt(string UserInput)
-        {
-            try
-            {
-                return int.Parse(UserInput); // return int if number
-            }
-            catch (FormatException)// if not number recusive call until a number is entered
-            {
-                Console.WriteLine("Invalid menu choice. Please enter a numerical value...");
-                return ValidationStringtoInt(Console.ReadLine());
-            }
-            
-        }
-        static int ValidationMenu(int choice, int MaxChoices)
-        {
-            while (choice < 1 || choice > MaxChoices) {
-                Console.WriteLine($"Invalid menu choice. Please enter a number between 1 and {MaxChoices} with respect to the menu...");
-                choice = ValidationStringtoInt(Console.ReadLine());
-            }
-            return choice;
-        }
-        public static string ValidationStringYN(string Choice)
-        {
-            while(Choice != "y" && Choice != "n")
-            {
-                Console.WriteLine("Invalid input. Please enter y for yes and n for no to continue.");
-                Choice = Console.ReadLine();
-                Choice = Choice.ToLower();
-            }
-            return Choice;
         }
        
+        public static void LinkDatabase()
+        {
+            ItemRepository.Control.Database.EnsureCreated();
+        }
+       public static void SetDisplay(Sort Order)
+        {
+            
+            ItemRepository.Display(Order);
+        }
+        public static void MenuCreateTodo()
+        {
+            ItemRepository.CreateTodo();
+        }
+        public static void MenuDeleteTodo()
+        {
+            ItemRepository.DeleteTodo();
+        }
+        public static void MenuEditTodo()
+        {
+            ItemRepository.EditTodo();
+        }
+        public static void MenuCompleteTodo()
+        {
+            ItemRepository.CompleteTodo();
+        }
     }
 }
 

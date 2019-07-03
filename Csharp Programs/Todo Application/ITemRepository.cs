@@ -7,7 +7,7 @@ using System.IO;
 
 namespace Todo_Application
 {
-    class ITemRepository
+    class ItemRepository
     {
         public static TodoController Control = new TodoController();
         public static DateTime GetDate()
@@ -17,13 +17,13 @@ namespace Todo_Application
             do
             {
                 Console.WriteLine("Please Enter year...");
-                Year = StaticFunctions.ValidationStringtoInt(Console.ReadLine());
+                Year = Validation.ValidationStringtoInt(Console.ReadLine());
                 Console.WriteLine("Please Enter Month...");
-                Month = StaticFunctions.ValidationStringtoInt(Console.ReadLine());
-                //TODO validate months in year
+                Month = Validation.ValidationStringtoInt(Console.ReadLine());
+                Month = Validation.ValidationMonthInYear(Month);
                 Console.WriteLine("Please Enter Day...");
-                Day = StaticFunctions.ValidationStringtoInt(Console.ReadLine());
-                //TODO validate days in month
+                Day = Validation.ValidationStringtoInt(Console.ReadLine());
+                Day = Validation.ValidationDayInMonth(Month, Day);
                 Due = new DateTime(Year, Month, Day);
                 if (Due < DateTime.Now)
                 {
@@ -45,14 +45,14 @@ namespace Todo_Application
             Description = Console.ReadLine();
             Console.WriteLine("Would you like to set a priority for the Todo item? (y/n)...");
             PriorityBool = Console.ReadLine();
-            PriorityBool = StaticFunctions.ValidationStringYN(PriorityBool.ToLower());
+            PriorityBool = Validation.ValidationStringYN(PriorityBool.ToLower());
             if(PriorityBool == "y")
             {
-                Priority = StaticFunctions.PriorityMenu();
+                Priority = ConsoleUtilities.PriorityMenu();
             }
             Console.WriteLine("Would you like to set a due date for your Todo item? (y/n)...");
             DueBool = Console.ReadLine();
-            DueBool = StaticFunctions.ValidationStringYN(DueBool.ToLower());
+            DueBool = Validation.ValidationStringYN(DueBool.ToLower());
             if(DueBool == "y")
             {
                 Due = GetDate();
@@ -81,7 +81,7 @@ namespace Todo_Application
         {
             //TODO move user input to static functions
             Console.WriteLine("Please enter the Id of the Todo you wish to delete.");
-            int choice = StaticFunctions.ValidationStringtoInt(Console.ReadLine());
+            int choice = Validation.ValidationStringtoInt(Console.ReadLine());
             Control.Todos.Remove(Control.Todos.Find(choice));
             Control.SaveChanges();
         }
@@ -140,11 +140,11 @@ namespace Todo_Application
         public static void EditTodo()
         {
             Console.WriteLine("Please enter the Id of the item you want to edit...\n");
-            int IdChoice = StaticFunctions.ValidationStringtoInt(Console.ReadLine());
+            int IdChoice = Validation.ValidationStringtoInt(Console.ReadLine());
             Console.Clear();
             Control.Todos.Find(IdChoice).DisplayTodo();
             Console.WriteLine("What Field do you wish to edit?");
-            int EditChoice = StaticFunctions.EditMenu();
+            int EditChoice = ConsoleUtilities.EditMenu();
             switch(EditChoice)
             {
                 case 1:
@@ -170,7 +170,7 @@ namespace Todo_Application
                     Control.SaveChanges();
                     break;
                 case 5:
-                    Control.Todos.Find(IdChoice).Priority = StaticFunctions.PriorityMenu();
+                    Control.Todos.Find(IdChoice).Priority = ConsoleUtilities.PriorityMenu();
                     Control.SaveChanges();
                     break;
                 case 6:
@@ -180,7 +180,7 @@ namespace Todo_Application
         public static void CompleteTodo()
         {
             Console.WriteLine("Please enter the items Id...");
-            int Choice = StaticFunctions.ValidationStringtoInt(Console.ReadLine());
+            int Choice = Validation.ValidationStringtoInt(Console.ReadLine());
             Control.Todos.Find(Choice).Complete = true;
         }
     }
